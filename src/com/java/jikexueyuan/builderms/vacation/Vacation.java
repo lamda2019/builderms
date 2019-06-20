@@ -18,7 +18,9 @@ public class Vacation {
 		try {
 			mStDate = sdf.parse(std);
 			mVacationDay = new VacationDay(mStDate);
+			//假期队列里添加进某一天的活动和门票
 			mVacationDayLst.add(mVacationDay);
+			//继续下一天
 			mDays++;
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
